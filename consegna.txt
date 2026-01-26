@@ -1,0 +1,5 @@
+sfruttare la card
+
+fetch dei dati (array placeholder)
+
+per poter costruire la lista dei viaggi
