@@ -1,4 +1,5 @@
 import travels from "../../data.js"
+import { Link, NavLink } from "react-router-dom"
 
 export default function Home() {
     return (
@@ -15,11 +16,13 @@ export default function Home() {
                                 <p className="card-text">{travel.description}</p>
                                 <p className="card-text">from: {travel.initial_date} to: {travel.final_date} </p>
                                 <p className="card-text"><small className="text-muted">travel created at : {travel.created_at}</small></p>
+                                <Link to={`/travels/${travel.id}`} className="btn btn-primary btn-sm">Vedi le recensioni</Link>
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                </div >
+            ))
+            }
         </>
     )
 }

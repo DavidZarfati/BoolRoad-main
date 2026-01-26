@@ -4,9 +4,8 @@ export default function Header({ nomeApp }) {
 
     const headerLinks = [
         { title: "I viaggi", path: "/" },
-        { title: "I viaggiatori", path: "/travelers" }
+        // { title: "I viaggiatori", path: "/travels" }
     ];
-
     return (
         <section>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
