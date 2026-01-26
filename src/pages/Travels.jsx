@@ -15,7 +15,7 @@ export default function Travelers() {
         <>
             <h1>Viaggi</h1>
             {viaggiatori.map((traveler) => (
-                <TravelersCard traveler={traveler} />
+                <TravelersCard key={traveler.id} traveler={traveler} />
             ))}
         </>
     )
