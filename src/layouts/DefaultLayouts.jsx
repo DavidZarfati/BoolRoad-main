@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
+import TravelersCard from "../components/TravelersCard";
 
 export default function DefaultLayouts() {
     return (
         <>
-            <h1>Header</h1>
+            <Header />
             <Outlet />
+            <TravelersCard />
         </>
     )
 }

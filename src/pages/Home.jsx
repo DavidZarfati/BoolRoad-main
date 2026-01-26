@@ -1,4 +1,4 @@
-import travels from "../../data"
+import travels from "../../data.js"
 
 export default function Home() {
     return (

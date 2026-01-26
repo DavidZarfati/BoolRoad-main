@@ -7,6 +7,7 @@ import Travels from './pages/Travels.jsx'
 import Home from './pages/Home'
 import DefaultLayouts from './layouts/DefaultLayouts'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
