@@ -27,24 +27,23 @@ export default function Travelers() {
 
     return (
         <>
-            <div className="app-container">
-                <div className="row">
-                    <div className="col">
-                        <div className="title-bar d-flex"><ButtonGoBack /><h1>Viaggi</h1></div>
-
-                        <nav className="navbar">
-                            <div className="container-fluid">
-                                <form className="d-flex align-items-center gap-2 border rounded-pill px-3 py-2 shadow-sm" role="search" onSubmit={() => filter(event)}>
-                                    <input className="form-control border-0 bg-transparent shadow-none" type="search" placeholder="Search" aria-label="Search" value={filterVar} onChange={(event) => setFilterVar(event.target.value)} />
-                                    <button className="btn buttons" type="submit"><i className="bi bi-search"></i></button>
-                                    <button className="btn buttons" onClick={reset}><i className="bi bi-arrow-counterclockwise"></i></button>
-                                </form>
-                            </div>
-                        </nav>
-                        {filteredTravelers.map((traveler) => (
-                            <TravelersCard key={traveler.id} traveler={traveler} />
-                        ))}
+            <div className="container">
+                <div className="title-bar d-flex"><ButtonGoBack /><h1>Viaggi</h1></div>
+                <nav className="navbar">
+                    <div className="container">
+                        <form className="d-flex align-items-center gap-2 border rounded-pill px-3 py-2 shadow-sm" role="search" onSubmit={() => filter(event)}>
+                            <input className="form-control border-0 bg-transparent shadow-none" type="search" placeholder="Search" aria-label="Search" value={filterVar} onChange={(event) => setFilterVar(event.target.value)} />
+                            <button className="btn buttons" type="submit"><i className="bi bi-search"></i></button>
+                            <button className="btn buttons" onClick={reset}><i className="bi bi-arrow-counterclockwise"></i></button>
+                        </form>
                     </div>
+                </nav>
+                <div className="row">
+                    {filteredTravelers.map((traveler) => (
+                        <div className="col-12 col-md-6 mb-3" key={traveler.id}>
+                            <TravelersCard traveler={traveler} />
+                        </div>
+                    ))}
                 </div>
             </div>
         </>

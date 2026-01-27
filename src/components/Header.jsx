@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+
 export default function Header({ nomeApp }) {
 
     const headerLinks = [
@@ -25,15 +26,18 @@ export default function Header({ nomeApp }) {
         // </section>
         <>
 
-            <nav className="navbar app-header header">
-                <div className="container-fluid app-header-container align-items-center justify-content-between py-2">
-                    <div className="d-flex align-items-center gap-2"><img src="/path/al/tuo-logo.png" alt="BoolRoad" className="app-logo" />
-                        <span className="app-title d-none d-sm-inline">{nomeApp}</span></div>
-                    <div className="d-flex align-items-center gap-2">
-                        <NavLink to="/" className="nav-link bg-light border rounded-circle shadow-sm d-inline-flex align-items-center justify-content-center">
+            <nav className="navbar header">
+                <div className="container-fluid header-inner">
+
+                    <div className="header-brand">
+                        <img src="/image/logoblu.png" alt="BoolRoad" className="header-logo" />
+                        <span className="header-title d-none d-sm-inline">{nomeApp}</span></div>
+                    <div className="header-actions">
+                        <NavLink to="/" className="header-link">
                             I viaggi
                         </NavLink>
                     </div>
+
                 </div>
             </nav>
 

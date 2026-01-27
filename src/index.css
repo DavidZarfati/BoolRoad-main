@@ -1,34 +1,88 @@
+.travelers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.travelers-container .travel-card {
+    width: 100%;
+    grid-column: span 1;
+}
+
 /* HEADER */
 .header {
-    background: transparent;
-    /* niente bianco */
-    backdrop-filter: blur(6px);
-    /* effetto glass */
+    background: linear-gradient(to bottom,
+            rgba(43, 156, 218, 0.95) 0%,
+            rgba(95, 170, 211, 0.75) 40%,
+            rgba(184, 209, 223, 0.35) 80%,
+            rgba(203, 232, 248, 0.05) 95%)
 }
 
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.8rem 1.2rem;
+    padding: 0.2rem 0.8rem;
 }
 
 /* BRAND */
 .header-brand {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0;
 }
 
 .header-logo {
-    height: 36px;
+    height: 60px;
     filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
 }
 
 .header-title {
     color: rgba(255, 255, 255, 0.9);
 
+}
 
+/* ACTIONS */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* LINK / BUTTON */
+.header-link {
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+
+    color: #0f2a3d;
+    text-decoration: none;
+    font-weight: 500;
+
+    background: rgba(244, 249, 252, 0.85);
+
+    backdrop-filter: blur(4px);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.header-link:hover {
+    background: rgba(95, 170, 211, 0.35);
+    color: #0a3a55;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.header-link.active {
+    background: rgba(255, 255, 255, 0.45);
+    color: #0a3a55;
+    font-weight: 700;
 }
 
 
@@ -75,12 +129,14 @@ body {
 
 
 .app-container {
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
+
 
 
 .travel-card {
@@ -89,9 +145,11 @@ body {
     height: 190px;
     border-radius: 22px;
     overflow: hidden;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     text-decoration: none;
+    /* Ogni card occupa il 100% della cella grid, quindi il 50% della pagina */
+    grid-column: span 1;
 }
 
 .travel-card-bg {
@@ -112,7 +170,7 @@ body {
     background: linear-gradient(to top,
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0));
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .travel-title {
@@ -141,9 +199,9 @@ body {
 
 }
 
-.btn :hover {
-    background: #0fb9b1;
-    color: #ffffff;
+.m-hover:hover {
+    background-color: #0fb9b1;
+    color: #00bfff;
     text-decoration: none;
     transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -181,9 +239,6 @@ body {
 @media (min-width: 992px) {
     .app-container {
         max-width: 900px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
     }
 
     .travel-card {
@@ -195,3 +250,37 @@ body {
         transform: scale(1.05);
     }
 }
+
+
+
+
+.traveler-overlay .btn:hover,
+.traveler-overlay .btn:focus,
+.traveler-overlay .btn:active {
+    color: #555 !important;
+    /* grigio */
+    background: #f1f3f5 !important;
+    border-color: #ddd !important;
+}
+
+
+
+.app-container .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+
+}
+
+
+
+/* @media (min-width: 992px) {
+
+    .app-container .col {
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+    }
+} */
