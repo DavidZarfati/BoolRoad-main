@@ -36,8 +36,8 @@ export default function Travelers() {
                             <div className="container-fluid">
                                 <form className="d-flex align-items-center gap-2 border rounded-pill px-3 py-2 shadow-sm" role="search" onSubmit={() => filter(event)}>
                                     <input className="form-control border-0 bg-transparent shadow-none" type="search" placeholder="Search" aria-label="Search" value={filterVar} onChange={(event) => setFilterVar(event.target.value)} />
-                                    <button className="btn buttons" type="submit"><i class="bi bi-search"></i></button>
-                                    <button className="btn buttons" onClick={reset}><i class="bi bi-arrow-counterclockwise"></i></button>
+                                    <button className="btn buttons" type="submit"><i className="bi bi-search"></i></button>
+                                    <button className="btn buttons" onClick={reset}><i className="bi bi-arrow-counterclockwise"></i></button>
                                 </form>
                             </div>
                         </nav>

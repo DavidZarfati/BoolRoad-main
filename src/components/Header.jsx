@@ -25,13 +25,15 @@ export default function Header({ nomeApp }) {
         // </section>
         <>
 
-            <nav className="navbar app-header">
-                <div className="container app-header-container">
-                    <span className="app-title">{nomeApp}</span>
-
-                    <NavLink to="/" className="nav-link">
-                        I viaggi
-                    </NavLink>
+            <nav className="navbar app-header header">
+                <div className="container-fluid app-header-container align-items-center justify-content-between py-2">
+                    <div className="d-flex align-items-center gap-2"><img src="/path/al/tuo-logo.png" alt="BoolRoad" className="app-logo" />
+                        <span className="app-title d-none d-sm-inline">{nomeApp}</span></div>
+                    <div className="d-flex align-items-center gap-2">
+                        <NavLink to="/" className="nav-link bg-light border rounded-circle shadow-sm d-inline-flex align-items-center justify-content-center">
+                            I viaggi
+                        </NavLink>
+                    </div>
                 </div>
             </nav>
 

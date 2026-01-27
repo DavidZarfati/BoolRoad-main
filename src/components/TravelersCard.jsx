@@ -18,7 +18,7 @@ export default function TravelersCard({ traveler }) {
                             {traveler.name} {traveler.surname}
                         </h5>
 
-                        <button className="btn btn bg-light border rounded-pill px-4 py-2 shadow-sm 
+                        <button className="btn bg-light border rounded-pill px-4 py-2 shadow-sm hover
                d-inline-flex align-items-center gap-2" onClick={() => setIsVisible(!isVisible)}>
                             {isVisible ? 'Nascondi' : 'Mostra'} Informazioni Personali <i className="bi bi-plus-lg text-secondary"></i>
                         </button>
