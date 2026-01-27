@@ -1,6 +1,3 @@
-import Travelers from "./src/pages/Travels";
-
-// ===== TRAVELERS =====
 const travelersArray = [
     {
         id: 1,
@@ -102,6 +99,7 @@ const travelersArray = [
         id_travel: 5,
         img: "foto_travelers.jpg"
     },
+
     {
         id: 11,
         name: "Simone",
@@ -201,7 +199,813 @@ const travelersArray = [
         CF: "RVILRA96A41H501Y",
         id_travel: 10,
         img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 21,
+        name: "Alberto",
+        surname: "Fontana",
+        phone_number: "+39 3313333333",
+        email: "alberto.fontana@email.it",
+        CF: "FNTLRT81A01F205Q",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 22,
+        name: "Beatrice",
+        surname: "Sala",
+        phone_number: "+39 3314444444",
+        email: "beatrice.sala@email.it",
+        CF: "SLABRC92C41H501E",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 23,
+        name: "Cristian",
+        surname: "Rinaldi",
+        phone_number: "+39 3315555555",
+        email: "cristian.rinaldi@email.it",
+        CF: "RNLCRT87D12F205A",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 24,
+        name: "Daniela",
+        surname: "Monti",
+        phone_number: "+39 3316666666",
+        email: "daniela.monti@email.it",
+        CF: "MNTDNL90A41H501M",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 25,
+        name: "Enrico",
+        surname: "Sereni",
+        phone_number: "+39 3317777777",
+        email: "enrico.sereni@email.it",
+        CF: "SRNNRC84C12F205T",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 26,
+        name: "Federica",
+        surname: "Longo",
+        phone_number: "+39 3318888888",
+        email: "federica.longo@email.it",
+        CF: "LNGFRC91C41H501S",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 27,
+        name: "Gabriele",
+        surname: "Pini",
+        phone_number: "+39 3319999999",
+        email: "gabriele.pini@email.it",
+        CF: "PNIGBR86D12F205R",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 28,
+        name: "Helena",
+        surname: "Fabbri",
+        phone_number: "+39 3321111111",
+        email: "helena.fabbri@email.it",
+        CF: "FBBHLN93A41H501C",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 29,
+        name: "Ivan",
+        surname: "Gentili",
+        phone_number: "+39 3322222222",
+        email: "ivan.gentili@email.it",
+        CF: "GNTIVN88C12F205H",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 30,
+        name: "Jessica",
+        surname: "Marchetti",
+        phone_number: "+39 3323333333",
+        email: "jessica.marchetti@email.it",
+        CF: "MRCJSC94A41H501D",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 31,
+        name: "Kevin",
+        surname: "Ruggeri",
+        phone_number: "+39 3324444444",
+        email: "kevin.ruggeri@email.it",
+        CF: "RGGKVN90C12F205N",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 32,
+        name: "Laura",
+        surname: "Bellini",
+        phone_number: "+39 3325555555",
+        email: "laura.bellini@email.it",
+        CF: "BLLLRA91A41H501B",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 33,
+        name: "Matilde",
+        surname: "Orlando",
+        phone_number: "+39 3326666666",
+        email: "matilde.orlando@email.it",
+        CF: "RLNMTL95C41H501A",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 34,
+        name: "Nicola",
+        surname: "Parisi",
+        phone_number: "+39 3327777777",
+        email: "nicola.parisi@email.it",
+        CF: "PRSNCL87D12F205G",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 35,
+        name: "Olivia",
+        surname: "Rizzi",
+        phone_number: "+39 3328888888",
+        email: "olivia.rizzi@email.it",
+        CF: "RZZLVL96A41H501F",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 36,
+        name: "Pietro",
+        surname: "Sartori",
+        phone_number: "+39 3329999999",
+        email: "pietro.sartori@email.it",
+        CF: "SRTPTR85C12F205L",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 37,
+        name: "Quentin",
+        surname: "Mancini",
+        phone_number: "+39 3330000000",
+        email: "quentin.mancini@email.it",
+        CF: "MNCQNT89A41H501Z",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 38,
+        name: "Rebecca",
+        surname: "Vitale",
+        phone_number: "+39 3330101010",
+        email: "rebecca.vitale@email.it",
+        CF: "VTLRBC92C41H501K",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 39,
+        name: "Stefano",
+        surname: "Guidi",
+        phone_number: "+39 3330202020",
+        email: "stefano.guidi@email.it",
+        CF: "GDISTF84D12F205Y",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 40,
+        name: "Teresa",
+        surname: "Nava",
+        phone_number: "+39 3330303030",
+        email: "teresa.nava@email.it",
+        CF: "NVATRS93A41H501U",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 41,
+        name: "Umberto",
+        surname: "Ferri",
+        phone_number: "+39 3330404040",
+        email: "umberto.ferri@email.it",
+        CF: "FRRMBR85C12F205P",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 42,
+        name: "Veronica",
+        surname: "Colombo",
+        phone_number: "+39 3330505050",
+        email: "veronica.colombo@email.it",
+        CF: "CLMVNC92A41H501H",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 43,
+        name: "Walter",
+        surname: "D’Amico",
+        phone_number: "+39 3330606060",
+        email: "walter.damico@email.it",
+        CF: "DMCWLT84D12F205R",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 44,
+        name: "Xenia",
+        surname: "Martelli",
+        phone_number: "+39 3330707070",
+        email: "xenia.martelli@email.it",
+        CF: "MRTXNA95A41H501F",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 45,
+        name: "Yuri",
+        surname: "Pagani",
+        phone_number: "+39 3330808080",
+        email: "yuri.pagani@email.it",
+        CF: "PGNYRI88C12F205C",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 46,
+        name: "Zoe",
+        surname: "Leoni",
+        phone_number: "+39 3330909090",
+        email: "zoe.leoni@email.it",
+        CF: "LNZOE94A41H501E",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 47,
+        name: "Andrea",
+        surname: "Morelli",
+        phone_number: "+39 3341010101",
+        email: "andrea.morelli@email.it",
+        CF: "MRLAND87D12F205Q",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 48,
+        name: "Bianca",
+        surname: "Testoni",
+        phone_number: "+39 3341111111",
+        email: "bianca.testoni@email.it",
+        CF: "TSTBNC92A41H501M",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 49,
+        name: "Claudio",
+        surname: "Bernardi",
+        phone_number: "+39 3341212121",
+        email: "claudio.bernardi@email.it",
+        CF: "BRNCLD85C12F205B",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 50,
+        name: "Debora",
+        surname: "Piras",
+        phone_number: "+39 3341313131",
+        email: "debora.piras@email.it",
+        CF: "PRSDRB90A41H501S",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 51,
+        name: "Edoardo",
+        surname: "Ratti",
+        phone_number: "+39 3341414141",
+        email: "edoardo.ratti@email.it",
+        CF: "RTTDRD86C12F205N",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 52,
+        name: "Flavia",
+        surname: "Sanna",
+        phone_number: "+39 3341515151",
+        email: "flavia.sanna@email.it",
+        CF: "SNNFLV93A41H501Y",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 53,
+        name: "Gianluca",
+        surname: "Costa",
+        phone_number: "+39 3341616161",
+        email: "gianluca.costa@email.it",
+        CF: "CSTGNL89C12F205T",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 54,
+        name: "Helga",
+        surname: "Romiti",
+        phone_number: "+39 3341717171",
+        email: "helga.romiti@email.it",
+        CF: "RMTHLG94A41H501R",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 55,
+        name: "Igor",
+        surname: "Marino",
+        phone_number: "+39 3341818181",
+        email: "igor.marino@email.it",
+        CF: "MRNIGR85C12F205E",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 56,
+        name: "Jessica",
+        surname: "Borrelli",
+        phone_number: "+39 3341919191",
+        email: "jessica.borrelli@email.it",
+        CF: "BRLJSC91A41H501C",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 57,
+        name: "Kevin",
+        surname: "De Santis",
+        phone_number: "+39 3352020202",
+        email: "kevin.desantis@email.it",
+        CF: "DSNKVN88C12F205L",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 58,
+        name: "Lidia",
+        surname: "Farina",
+        phone_number: "+39 3352121212",
+        email: "lidia.farina@email.it",
+        CF: "FRNLDI92A41H501Z",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 59,
+        name: "Mirko",
+        surname: "Palmieri",
+        phone_number: "+39 3352222222",
+        email: "mirko.palmieri@email.it",
+        CF: "PLMMRK87C12F205H",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 60,
+        name: "Nadia",
+        surname: "Silvestri",
+        phone_number: "+39 3352323232",
+        email: "nadia.silvestri@email.it",
+        CF: "SLVNDA95A41H501Q",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 61,
+        name: "Oscar",
+        surname: "Gentile",
+        phone_number: "+39 3352424242",
+        email: "oscar.gentile@email.it",
+        CF: "GNTSCR84C12F205F",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 62,
+        name: "Paola",
+        surname: "Venturi",
+        phone_number: "+39 3352525252",
+        email: "paola.venturi@email.it",
+        CF: "VNTPAL90A41H501N",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 63,
+        name: "Quirino",
+        surname: "Landi",
+        phone_number: "+39 3352626262",
+        email: "quirino.landi@email.it",
+        CF: "LNDQRN85C12F205A",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 64,
+        name: "Rachele",
+        surname: "Tosi",
+        phone_number: "+39 3352727272",
+        email: "rachele.tosi@email.it",
+        CF: "TSIRCL93A41H501D",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 65,
+        name: "Salvatore",
+        surname: "Lombardi",
+        phone_number: "+39 3352828282",
+        email: "salvatore.lombardi@email.it",
+        CF: "LMBSVT86C12F205U",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 66,
+        name: "Tiziana",
+        surname: "Ruggiero",
+        phone_number: "+39 3352929292",
+        email: "tiziana.ruggiero@email.it",
+        CF: "RGGTZN91A41H501K",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 67,
+        name: "Ulisse",
+        surname: "Caprioli",
+        phone_number: "+39 3363030303",
+        email: "ulisse.caprioli@email.it",
+        CF: "CPRULS88C12F205M",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 68,
+        name: "Viola",
+        surname: "Rossetti",
+        phone_number: "+39 3363131313",
+        email: "viola.rossetti@email.it",
+        CF: "RSSVLA94A41H501T",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 69,
+        name: "William",
+        surname: "Basile",
+        phone_number: "+39 3363232323",
+        email: "william.basile@email.it",
+        CF: "BSLWLN85C12F205S",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 70,
+        name: "Ylenia",
+        surname: "Cattaneo",
+        phone_number: "+39 3363333333",
+        email: "ylenia.cattaneo@email.it",
+        CF: "CTTYLN92A41H501G",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 71,
+        name: "Zaccaria",
+        surname: "Ferretti",
+        phone_number: "+39 3363434343",
+        email: "zaccaria.ferretti@email.it",
+        CF: "FRRZCR87C12F205J",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 72,
+        name: "Arianna",
+        surname: "Paglia",
+        phone_number: "+39 3363535353",
+        email: "arianna.paglia@email.it",
+        CF: "PGLARN95A41H501E",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 73,
+        name: "Bruno",
+        surname: "Valenti",
+        phone_number: "+39 3363636363",
+        email: "bruno.valenti@email.it",
+        CF: "VLNBRN84C12F205D",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 74,
+        name: "Carla",
+        surname: "Roversi",
+        phone_number: "+39 3363737373",
+        email: "carla.roversi@email.it",
+        CF: "RVSRCL90A41H501B",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 75,
+        name: "Dario",
+        surname: "Nicolini",
+        phone_number: "+39 3363838383",
+        email: "dario.nicolini@email.it",
+        CF: "NCLDRI86C12F205R",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 76,
+        name: "Elisa",
+        surname: "Zanetti",
+        phone_number: "+39 3363939393",
+        email: "elisa.zanetti@email.it",
+        CF: "ZNTSLS92A41H501M",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 77,
+        name: "Fabio",
+        surname: "Mazza",
+        phone_number: "+39 3374040404",
+        email: "fabio.mazza@email.it",
+        CF: "MZZFBA85C12F205Q",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 78,
+        name: "Gloria",
+        surname: "Sereni",
+        phone_number: "+39 3374141414",
+        email: "gloria.sereni@email.it",
+        CF: "SRNGLR94A41H501P",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 79,
+        name: "Hugo",
+        surname: "Rinaldi",
+        phone_number: "+39 3374242424",
+        email: "hugo.rinaldi@email.it",
+        CF: "RNLHGO88C12F205F",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 80,
+        name: "Irene",
+        surname: "Donati",
+        phone_number: "+39 3374343434",
+        email: "irene.donati@email.it",
+        CF: "DNTIRN93A41H501L",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 81,
+        name: "Jacopo",
+        surname: "Ferraro",
+        phone_number: "+39 3374444444",
+        email: "jacopo.ferraro@email.it",
+        CF: "FRRJCP85C12F205N",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 82,
+        name: "Katia",
+        surname: "Morandi",
+        phone_number: "+39 3374545454",
+        email: "katia.morandi@email.it",
+        CF: "MRDKTA91A41H501R",
+        id_travel: 1,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 83,
+        name: "Lorenzo",
+        surname: "Fumagalli",
+        phone_number: "+39 3374646464",
+        email: "lorenzo.fumagalli@email.it",
+        CF: "FMGLNZ87C12F205S",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 84,
+        name: "Marta",
+        surname: "Colletti",
+        phone_number: "+39 3374747474",
+        email: "marta.colletti@email.it",
+        CF: "CLLMRT94A41H501T",
+        id_travel: 2,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 85,
+        name: "Niccolò",
+        surname: "Barbieri",
+        phone_number: "+39 3374848484",
+        email: "niccolo.barbieri@email.it",
+        CF: "BRBNCL86C12F205E",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 86,
+        name: "Olga",
+        surname: "De Marchi",
+        phone_number: "+39 3374949494",
+        email: "olga.demarchi@email.it",
+        CF: "DMRLGH92A41H501C",
+        id_travel: 3,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 87,
+        name: "Piero",
+        surname: "Rondini",
+        phone_number: "+39 3385050505",
+        email: "piero.rondini@email.it",
+        CF: "RNDPRO84C12F205L",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 88,
+        name: "Querina",
+        surname: "Bertoli",
+        phone_number: "+39 3385151515",
+        email: "querina.bertoli@email.it",
+        CF: "BRTQRN95A41H501M",
+        id_travel: 4,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 89,
+        name: "Riccardo",
+        surname: "Pellegrino",
+        phone_number: "+39 3385252525",
+        email: "riccardo.pellegrino@email.it",
+        CF: "PLLRC86C12F205Q",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 90,
+        name: "Silvia",
+        surname: "Corradi",
+        phone_number: "+39 3385353535",
+        email: "silvia.corradi@email.it",
+        CF: "CRDSLV93A41H501A",
+        id_travel: 5,
+        img: "foto_travelers.jpg"
+    },
+
+    {
+        id: 91,
+        name: "Tommaso",
+        surname: "Negri",
+        phone_number: "+39 3385454545",
+        email: "tommaso.negri@email.it",
+        CF: "NGRTMS85C12F205F",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 92,
+        name: "Ursula",
+        surname: "Bernasconi",
+        phone_number: "+39 3385555555",
+        email: "ursula.bernasconi@email.it",
+        CF: "BRNURS92A41H501D",
+        id_travel: 6,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 93,
+        name: "Vittorio",
+        surname: "Pavan",
+        phone_number: "+39 3385656565",
+        email: "vittorio.pavan@email.it",
+        CF: "PVNVTR87C12F205R",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 94,
+        name: "Wanda",
+        surname: "Locatelli",
+        phone_number: "+39 3385757575",
+        email: "wanda.locatelli@email.it",
+        CF: "LCTWND94A41H501S",
+        id_travel: 7,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 95,
+        name: "Xavier",
+        surname: "Baldini",
+        phone_number: "+39 3385858585",
+        email: "xavier.baldini@email.it",
+        CF: "BLDXVR88C12F205H",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 96,
+        name: "Yara",
+        surname: "Fornari",
+        phone_number: "+39 3385959595",
+        email: "yara.fornari@email.it",
+        CF: "FRNYRA95A41H501E",
+        id_travel: 8,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 97,
+        name: "Zeno",
+        surname: "Gatti",
+        phone_number: "+39 3396060606",
+        email: "zeno.gatti@email.it",
+        CF: "GTTZNO86C12F205C",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 98,
+        name: "Alice",
+        surname: "Ravelli",
+        phone_number: "+39 3396161616",
+        email: "alice.ravelli@email.it",
+        CF: "RVLLCE93A41H501P",
+        id_travel: 9,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 99,
+        name: "Brando",
+        surname: "Morelli",
+        phone_number: "+39 3396262626",
+        email: "brando.morelli@email.it",
+        CF: "MRLBRN85C12F205M",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
+    },
+    {
+        id: 100,
+        name: "Claudia",
+        surname: "Santini",
+        phone_number: "+39 3396363636",
+        email: "claudia.santini@email.it",
+        CF: "SNTCLD92A41H501K",
+        id_travel: 10,
+        img: "foto_travelers.jpg"
     }
 ];
 
-export default travelersArray
+export default travelersArray;
