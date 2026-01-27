@@ -31,7 +31,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
-        <main className="app-container mx-auto my-5">
+        <main className="app-container p-5 mx-auto my-5">
             {travels.map((travel) => (
                 <Link
                     to={`/travels/${travel.id}`}

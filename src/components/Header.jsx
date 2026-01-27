@@ -28,7 +28,6 @@ export default function Header({ nomeApp }) {
 
             <nav className="navbar header">
                 <div className="container-fluid header-inner">
-
                     <div className="header-brand">
                         <img src="/image/logoblu.png" alt="BoolRoad" className="header-logo" />
                         <span className="header-title d-none d-sm-inline">{nomeApp}</span></div>

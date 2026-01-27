@@ -249,7 +249,7 @@ const travelersArray = [
         email: "enrico.sereni@email.it",
         CF: "SRNNRC84C12F205T",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        img: "viaggiatore.jpg"
     },
     {
         id: 26,
