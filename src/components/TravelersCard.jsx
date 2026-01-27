@@ -14,12 +14,13 @@ export default function TravelersCard({ traveler }) {
                             {traveler.name} {traveler.surname}
                         </h5>
 
-                        <button onClick={() => setIsVisible(!isVisible)}>
+                        <button className="btn btn-outline-primary" onClick={() => setIsVisible(!isVisible)}>
                             {isVisible ? 'Nascondi' : 'Mostra'} Informazioni Personali
                         </button>
-                        {isVisible && (<>                                 <p className="card-text">
-                            <strong>Email:</strong> {traveler.email}
-                        </p>
+                        {isVisible && (<>
+                            <p className="card-text">
+                                <strong>Email:</strong> {traveler.email}
+                            </p>
                             <p className="card-text">
                                 <strong>Telefono:</strong> {traveler.phone_number}
                             </p>
