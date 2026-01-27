@@ -7,7 +7,7 @@ const travelersArray = [
         email: "mario.rossi@email.it",
         CF: "RSSMRA80A01H501U",
         id_travel: 1,
-        img: "foto_travelers.jpg"
+        img: "viaggiatore.jpg"
     },
     {
         id: 2,

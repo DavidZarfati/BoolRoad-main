@@ -28,7 +28,7 @@ export default function Travelers() {
     return (
         <>
             <div className="container">
-                <div className="title-bar d-flex"><ButtonGoBack /><h1>Viaggi</h1></div>
+                <div className="d-flex align-items-center gap-2 title-bar"><ButtonGoBack /><h1>Viaggi</h1></div>
                 <nav className="navbar">
                     <div className="container">
                         <form className="d-flex align-items-center gap-2 border rounded-pill px-3 py-2 shadow-sm" role="search" onSubmit={() => filter(event)}>

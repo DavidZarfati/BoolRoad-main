@@ -7,10 +7,10 @@ export default function TravelersCard({ traveler }) {
     if (!traveler) return null;
     return (
         <>
-            <div className="travel-card" key={traveler.id}>
+            <div className="travel-card" id="altezza" key={traveler.id}>
                 <div
-                    className="travel-card-bg"
-                    style={{ backgroundImage: `url(/image/${traveler.img})`, opacity: 0.12 }}
+                    className="travel-card-bg" id="traveler"
+                    style={{ backgroundImage: `url(/image/${traveler.img})`, opacity: 0.70 }}
                 ></div>
                 <div className="travel-card-overlay traveler-overlay">
                     <h5 className="travel-title traveler-title">
