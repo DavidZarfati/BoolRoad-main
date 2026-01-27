@@ -1,4 +1,4 @@
-// ===== TRAVELS =====
+// ===== TRAVELS ===== //
 const travels = [
     {
         id: 1,

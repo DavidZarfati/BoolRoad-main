@@ -13,7 +13,7 @@ export default function TravelersCard({ traveler }) {
                     style={{ backgroundImage: `url(/image/${traveler.img})`, opacity: 0.70 }}
                 ></div>
                 <div className="travel-card-overlay traveler-overlay">
-                    <h5 className="travel-title traveler-title">
+                    <h5 className="travel-title traveler-title px-2">
                         {traveler.name} {traveler.surname}
                     </h5>
 
@@ -22,13 +22,13 @@ export default function TravelersCard({ traveler }) {
                         {isVisible ? 'Nascondi' : 'Mostra'} Informazioni Personali <i className="bi bi-plus-lg text-secondary"></i>
                     </button>
                     {isVisible && (<>
-                        <p className="travel-subtitle traveler-subtitle">
-                            <strong>Email:</strong> {traveler.email}
+                        <p className="travel-subtitle traveler-subtitle px-3 my-3">
+                            <strong>Email:</strong> <a className="text-white" href="">{traveler.email}</a>
                         </p>
-                        <p className="travel-subtitle traveler-subtitle">
-                            <strong>Telefono:</strong> {traveler.phone_number}
+                        <p className="travel-subtitle traveler-subtitle px-3">
+                            <strong>Telefono:</strong> <a className="text-white" href="">{traveler.phone_number}</a>
                         </p>
-                        <p className="travel-subtitle traveler-subtitle">
+                        <p className="travel-subtitle traveler-subtitle px-3">
                             <strong>CF:</strong> {traveler.CF}
                         </p>
                     </>

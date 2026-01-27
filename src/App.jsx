@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayouts />}>
             <Route path='/' element={<Home />} />
-            <Route path='/travels/:id' element={<Travels />} />
+            <Route path='/travels/:slug' element={<Travels />} />
           </Route>
         </Routes>
       </BrowserRouter>

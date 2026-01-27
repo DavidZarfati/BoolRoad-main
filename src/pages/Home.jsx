@@ -1,40 +1,22 @@
-// import travels from "../../data.js"
-// import { Link, NavLink } from "react-router-dom"
-
-// export default function Home() {
-//     return (
-//         <>
-//             {travels.map((travel) => (
-//                 <div className="card mb-3" key={travel.id}>
-//                     <div className="row g-0">
-//                         <div className="col-md-4">
-//                             <img src={"/image/" + travel.image} className="img-fluid rounded-start" alt={travel.name} />
-//                         </div>
-//                         <div className="col-md-8">
-//                             <div className="card-body">
-//                                 <h5 className="card-title">{travel.name}</h5>
-//                                 <p className="card-text">{travel.description}</p>
-//                                 <p className="card-text">from: {travel.initial_date} to: {travel.final_date} </p>
-//                                 <p className="card-text"><small className="text-muted">travel created at : {travel.created_at}</small></p>
-//                                 <Link to={`/travels/${travel.id}`} className="btn btn-primary btn-sm">Vedi dettagli</Link>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div >
-//             ))
-//             }
-//         </>
-//     )
-// }
-import travels from "../../data.js";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 export default function Home() {
+    const [travels, setTravels] = useState([])
+    useEffect(() => {
+        axios
+            .get(`http://localhost:3000/boolroad`)
+            .then((resp) => {
+                setTravels(resp.data)
+                // console.log(resp.data)
+            })
+    }, [])
+
     return (
         <main className="app-container p-5 mx-auto my-5">
             {travels.map((travel) => (
                 <Link
-                    to={`/travels/${travel.id}`}
+                    to={`/travels/${travel.slug}`}
                     key={travel.id}
                     className="travel-card"
                 >
@@ -48,7 +30,7 @@ export default function Home() {
                     <div className="travel-card-overlay">
                         <h5 className="travel-title">{travel.name}</h5>
                         <p className="travel-subtitle">
-                            {travel.initial_date} → {travel.final_date}
+                            {travel.initial_date.substring(0, 10)} → {travel.final_date.substring(0, 10)}
                         </p>
                     </div>
                 </Link>

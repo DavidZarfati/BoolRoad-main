@@ -1,26 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import travelersArray from "../../travelers";
 import TravelersCard from "../components/TravelersCard";
 import { useParams } from "react-router-dom";
 import ButtonGoBack from "../components/ButtonGoBack";
+import axios from "axios";
 
 export default function Travelers() {
-    const { id } = useParams()
-    const viaggiatori = travelersArray.filter((traveler) => traveler.id_travel === parseInt(id))
-    const [filteredTravelers, setFilteredTravelers] = useState(viaggiatori);
+    const { slug } = useParams()
+    // const viaggiatori = travelersArray.filter((traveler) => traveler.id_travel === parseInt(id))
+    const [filteredTravelers, setFilteredTravelers] = useState([]);
     const [filterVar, setFilterVar] = useState("");
+    const [travelers, setTravelers] = useState([])
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:3000/boolroad/${slug}`)
+            .then((resp) => {
+                setTravelers(resp.data)
+                setFilteredTravelers(resp.data)
+            })
+    }, [])
+
+
 
     function filter(event) {
         event.preventDefault();
-        const completeName = viaggiatori.map((traveler) => traveler.name + " " + traveler.surname);
-        const newFilteredTravelers = viaggiatori.filter((traveler, index) =>
+        const completeName = travelers.map((traveler) => traveler.name + " " + traveler.surname);
+        const newFilteredTravelers = travelers.filter((traveler, index) =>
             completeName[index].toLowerCase().includes(filterVar.toLowerCase())
         );
         setFilteredTravelers(newFilteredTravelers);
     }
 
     function reset() {
-        setFilteredTravelers(viaggiatori)
+        setFilteredTravelers(travelers)
         setFilterVar("")
     }
 
@@ -38,13 +51,15 @@ export default function Travelers() {
                         </form>
                     </div>
                 </nav>
-                <div className="row">
-                    {filteredTravelers.map((traveler) => (
-                        <div className="col-12 col-md-6 mb-3" key={traveler.id}>
-                            <TravelersCard traveler={traveler} />
-                        </div>
-                    ))}
-                </div>
+                {filteredTravelers.length == 0 ? <div>nessun partecipante trovato</div> :
+                    <div className="row">
+                        {filteredTravelers.map((traveler) => (
+                            <div className="col-12 col-md-6 mb-3" key={traveler.id}>
+                                <TravelersCard traveler={traveler} />
+                            </div>
+                        ))}
+                    </div>
+                }
             </div>
         </>
     )
