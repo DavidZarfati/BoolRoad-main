@@ -7,7 +7,7 @@ const travelersArray = [
         email: "mario.rossi@email.it",
         CF: "RSSMRA80A01H501U",
         id_travel: 1,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const travelersArray = [
         email: "giulia.bianchi@email.it",
         CF: "BNCGLI90C41F205X",
         id_travel: 1,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const travelersArray = [
         email: "luca.verdi@email.it",
         CF: "VRDLCU85D12L219Z",
         id_travel: 2,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const travelersArray = [
         email: "sara.neri@email.it",
         CF: "NRESRA92E45F839K",
         id_travel: 2,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const travelersArray = [
         email: "paolo.conti@email.it",
         CF: "CNTPLA78M10G273R",
         id_travel: 3,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const travelersArray = [
         email: "elena.ferrari@email.it",
         CF: "FRRLNE88A41H501D",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const travelersArray = [
         email: "marco.russo@email.it",
         CF: "RSSMRC81C12F205Z",
         id_travel: 4,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const travelersArray = [
         email: "anna.gallo@email.it",
         CF: "GLLNNA95B22H501E",
         id_travel: 4,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const travelersArray = [
         email: "davide.moretti@email.it",
         CF: "MRTDVD87D15F205S",
         id_travel: 5,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 10,
@@ -97,7 +97,7 @@ const travelersArray = [
         email: "chiara.romano@email.it",
         CF: "RMNCHR93A41H501Q",
         id_travel: 5,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -108,7 +108,7 @@ const travelersArray = [
         email: "simone.ricci@email.it",
         CF: "RCCSMN89E12F205W",
         id_travel: 6,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 12,
@@ -118,7 +118,7 @@ const travelersArray = [
         email: "laura.marini@email.it",
         CF: "MRNLRU91C41H501P",
         id_travel: 6,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 13,
@@ -128,7 +128,7 @@ const travelersArray = [
         email: "andrea.deluca@email.it",
         CF: "DLNDRN84A01F205X",
         id_travel: 7,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 14,
@@ -138,7 +138,7 @@ const travelersArray = [
         email: "valentina.costa@email.it",
         CF: "CSTVNT90B41H501F",
         id_travel: 7,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const travelersArray = [
         email: "matteo.greco@email.it",
         CF: "GRCMTT86C12F205A",
         id_travel: 8,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 16,
@@ -158,7 +158,7 @@ const travelersArray = [
         email: "francesca.p@email.it",
         CF: "PLLFRN94E41H501R",
         id_travel: 8,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 17,
@@ -168,7 +168,7 @@ const travelersArray = [
         email: "alessio.villa@email.it",
         CF: "VLLLSS88A01F205B",
         id_travel: 9,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 18,
@@ -178,7 +178,7 @@ const travelersArray = [
         email: "martina.serra@email.it",
         CF: "SRRMTN92C41H501L",
         id_travel: 9,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 19,
@@ -188,7 +188,7 @@ const travelersArray = [
         email: "federico.testa@email.it",
         CF: "TSTFRC85D12F205M",
         id_travel: 10,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 20,
@@ -198,7 +198,7 @@ const travelersArray = [
         email: "ilaria.riva@email.it",
         CF: "RVILRA96A41H501Y",
         id_travel: 10,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -209,7 +209,7 @@ const travelersArray = [
         email: "alberto.fontana@email.it",
         CF: "FNTLRT81A01F205Q",
         id_travel: 1,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 22,
@@ -219,7 +219,7 @@ const travelersArray = [
         email: "beatrice.sala@email.it",
         CF: "SLABRC92C41H501E",
         id_travel: 1,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 23,
@@ -229,7 +229,7 @@ const travelersArray = [
         email: "cristian.rinaldi@email.it",
         CF: "RNLCRT87D12F205A",
         id_travel: 2,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 24,
@@ -239,7 +239,7 @@ const travelersArray = [
         email: "daniela.monti@email.it",
         CF: "MNTDNL90A41H501M",
         id_travel: 2,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 25,
@@ -249,7 +249,7 @@ const travelersArray = [
         email: "enrico.sereni@email.it",
         CF: "SRNNRC84C12F205T",
         id_travel: 3,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 26,
@@ -259,7 +259,7 @@ const travelersArray = [
         email: "federica.longo@email.it",
         CF: "LNGFRC91C41H501S",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 27,
@@ -269,7 +269,7 @@ const travelersArray = [
         email: "gabriele.pini@email.it",
         CF: "PNIGBR86D12F205R",
         id_travel: 4,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 28,
@@ -279,7 +279,7 @@ const travelersArray = [
         email: "helena.fabbri@email.it",
         CF: "FBBHLN93A41H501C",
         id_travel: 4,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 29,
@@ -289,7 +289,7 @@ const travelersArray = [
         email: "ivan.gentili@email.it",
         CF: "GNTIVN88C12F205H",
         id_travel: 5,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 30,
@@ -299,7 +299,7 @@ const travelersArray = [
         email: "jessica.marchetti@email.it",
         CF: "MRCJSC94A41H501D",
         id_travel: 5,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -310,7 +310,7 @@ const travelersArray = [
         email: "kevin.ruggeri@email.it",
         CF: "RGGKVN90C12F205N",
         id_travel: 6,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 32,
@@ -320,7 +320,7 @@ const travelersArray = [
         email: "laura.bellini@email.it",
         CF: "BLLLRA91A41H501B",
         id_travel: 6,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 33,
@@ -330,7 +330,7 @@ const travelersArray = [
         email: "matilde.orlando@email.it",
         CF: "RLNMTL95C41H501A",
         id_travel: 7,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 34,
@@ -340,7 +340,7 @@ const travelersArray = [
         email: "nicola.parisi@email.it",
         CF: "PRSNCL87D12F205G",
         id_travel: 7,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 35,
@@ -350,7 +350,7 @@ const travelersArray = [
         email: "olivia.rizzi@email.it",
         CF: "RZZLVL96A41H501F",
         id_travel: 8,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 36,
@@ -360,7 +360,7 @@ const travelersArray = [
         email: "pietro.sartori@email.it",
         CF: "SRTPTR85C12F205L",
         id_travel: 8,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 37,
@@ -370,7 +370,7 @@ const travelersArray = [
         email: "quentin.mancini@email.it",
         CF: "MNCQNT89A41H501Z",
         id_travel: 9,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 38,
@@ -380,7 +380,7 @@ const travelersArray = [
         email: "rebecca.vitale@email.it",
         CF: "VTLRBC92C41H501K",
         id_travel: 9,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 39,
@@ -390,7 +390,7 @@ const travelersArray = [
         email: "stefano.guidi@email.it",
         CF: "GDISTF84D12F205Y",
         id_travel: 10,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 40,
@@ -400,7 +400,7 @@ const travelersArray = [
         email: "teresa.nava@email.it",
         CF: "NVATRS93A41H501U",
         id_travel: 10,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 41,
@@ -410,7 +410,7 @@ const travelersArray = [
         email: "umberto.ferri@email.it",
         CF: "FRRMBR85C12F205P",
         id_travel: 1,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 42,
@@ -420,7 +420,7 @@ const travelersArray = [
         email: "veronica.colombo@email.it",
         CF: "CLMVNC92A41H501H",
         id_travel: 1,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 43,
@@ -430,7 +430,7 @@ const travelersArray = [
         email: "walter.damico@email.it",
         CF: "DMCWLT84D12F205R",
         id_travel: 2,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 44,
@@ -440,7 +440,7 @@ const travelersArray = [
         email: "xenia.martelli@email.it",
         CF: "MRTXNA95A41H501F",
         id_travel: 2,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 45,
@@ -450,7 +450,7 @@ const travelersArray = [
         email: "yuri.pagani@email.it",
         CF: "PGNYRI88C12F205C",
         id_travel: 3,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 46,
@@ -460,7 +460,7 @@ const travelersArray = [
         email: "zoe.leoni@email.it",
         CF: "LNZOE94A41H501E",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 47,
@@ -470,7 +470,7 @@ const travelersArray = [
         email: "andrea.morelli@email.it",
         CF: "MRLAND87D12F205Q",
         id_travel: 4,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 48,
@@ -480,7 +480,7 @@ const travelersArray = [
         email: "bianca.testoni@email.it",
         CF: "TSTBNC92A41H501M",
         id_travel: 4,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 49,
@@ -490,7 +490,7 @@ const travelersArray = [
         email: "claudio.bernardi@email.it",
         CF: "BRNCLD85C12F205B",
         id_travel: 5,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 50,
@@ -500,7 +500,7 @@ const travelersArray = [
         email: "debora.piras@email.it",
         CF: "PRSDRB90A41H501S",
         id_travel: 5,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -511,7 +511,7 @@ const travelersArray = [
         email: "edoardo.ratti@email.it",
         CF: "RTTDRD86C12F205N",
         id_travel: 6,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 52,
@@ -521,7 +521,7 @@ const travelersArray = [
         email: "flavia.sanna@email.it",
         CF: "SNNFLV93A41H501Y",
         id_travel: 6,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 53,
@@ -531,7 +531,7 @@ const travelersArray = [
         email: "gianluca.costa@email.it",
         CF: "CSTGNL89C12F205T",
         id_travel: 7,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 54,
@@ -541,7 +541,7 @@ const travelersArray = [
         email: "helga.romiti@email.it",
         CF: "RMTHLG94A41H501R",
         id_travel: 7,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 55,
@@ -551,7 +551,7 @@ const travelersArray = [
         email: "igor.marino@email.it",
         CF: "MRNIGR85C12F205E",
         id_travel: 8,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 56,
@@ -561,7 +561,7 @@ const travelersArray = [
         email: "jessica.borrelli@email.it",
         CF: "BRLJSC91A41H501C",
         id_travel: 8,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 57,
@@ -571,7 +571,7 @@ const travelersArray = [
         email: "kevin.desantis@email.it",
         CF: "DSNKVN88C12F205L",
         id_travel: 9,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 58,
@@ -581,7 +581,7 @@ const travelersArray = [
         email: "lidia.farina@email.it",
         CF: "FRNLDI92A41H501Z",
         id_travel: 9,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 59,
@@ -591,7 +591,7 @@ const travelersArray = [
         email: "mirko.palmieri@email.it",
         CF: "PLMMRK87C12F205H",
         id_travel: 10,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 60,
@@ -601,7 +601,7 @@ const travelersArray = [
         email: "nadia.silvestri@email.it",
         CF: "SLVNDA95A41H501Q",
         id_travel: 10,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -612,7 +612,7 @@ const travelersArray = [
         email: "oscar.gentile@email.it",
         CF: "GNTSCR84C12F205F",
         id_travel: 1,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 62,
@@ -622,7 +622,7 @@ const travelersArray = [
         email: "paola.venturi@email.it",
         CF: "VNTPAL90A41H501N",
         id_travel: 1,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 63,
@@ -632,7 +632,7 @@ const travelersArray = [
         email: "quirino.landi@email.it",
         CF: "LNDQRN85C12F205A",
         id_travel: 2,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 64,
@@ -642,7 +642,7 @@ const travelersArray = [
         email: "rachele.tosi@email.it",
         CF: "TSIRCL93A41H501D",
         id_travel: 2,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 65,
@@ -652,7 +652,7 @@ const travelersArray = [
         email: "salvatore.lombardi@email.it",
         CF: "LMBSVT86C12F205U",
         id_travel: 3,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 66,
@@ -662,7 +662,7 @@ const travelersArray = [
         email: "tiziana.ruggiero@email.it",
         CF: "RGGTZN91A41H501K",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 67,
@@ -672,7 +672,7 @@ const travelersArray = [
         email: "ulisse.caprioli@email.it",
         CF: "CPRULS88C12F205M",
         id_travel: 4,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 68,
@@ -682,7 +682,7 @@ const travelersArray = [
         email: "viola.rossetti@email.it",
         CF: "RSSVLA94A41H501T",
         id_travel: 4,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 69,
@@ -692,7 +692,7 @@ const travelersArray = [
         email: "william.basile@email.it",
         CF: "BSLWLN85C12F205S",
         id_travel: 5,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 70,
@@ -702,7 +702,7 @@ const travelersArray = [
         email: "ylenia.cattaneo@email.it",
         CF: "CTTYLN92A41H501G",
         id_travel: 5,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -713,7 +713,7 @@ const travelersArray = [
         email: "zaccaria.ferretti@email.it",
         CF: "FRRZCR87C12F205J",
         id_travel: 6,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 72,
@@ -723,7 +723,7 @@ const travelersArray = [
         email: "arianna.paglia@email.it",
         CF: "PGLARN95A41H501E",
         id_travel: 6,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 73,
@@ -733,7 +733,7 @@ const travelersArray = [
         email: "bruno.valenti@email.it",
         CF: "VLNBRN84C12F205D",
         id_travel: 7,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 74,
@@ -743,7 +743,7 @@ const travelersArray = [
         email: "carla.roversi@email.it",
         CF: "RVSRCL90A41H501B",
         id_travel: 7,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 75,
@@ -753,7 +753,7 @@ const travelersArray = [
         email: "dario.nicolini@email.it",
         CF: "NCLDRI86C12F205R",
         id_travel: 8,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 76,
@@ -763,7 +763,7 @@ const travelersArray = [
         email: "elisa.zanetti@email.it",
         CF: "ZNTSLS92A41H501M",
         id_travel: 8,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 77,
@@ -773,7 +773,7 @@ const travelersArray = [
         email: "fabio.mazza@email.it",
         CF: "MZZFBA85C12F205Q",
         id_travel: 9,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 78,
@@ -783,7 +783,7 @@ const travelersArray = [
         email: "gloria.sereni@email.it",
         CF: "SRNGLR94A41H501P",
         id_travel: 9,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 79,
@@ -793,7 +793,7 @@ const travelersArray = [
         email: "hugo.rinaldi@email.it",
         CF: "RNLHGO88C12F205F",
         id_travel: 10,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 80,
@@ -803,7 +803,7 @@ const travelersArray = [
         email: "irene.donati@email.it",
         CF: "DNTIRN93A41H501L",
         id_travel: 10,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 81,
@@ -813,7 +813,7 @@ const travelersArray = [
         email: "jacopo.ferraro@email.it",
         CF: "FRRJCP85C12F205N",
         id_travel: 1,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 82,
@@ -823,7 +823,7 @@ const travelersArray = [
         email: "katia.morandi@email.it",
         CF: "MRDKTA91A41H501R",
         id_travel: 1,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 83,
@@ -833,7 +833,7 @@ const travelersArray = [
         email: "lorenzo.fumagalli@email.it",
         CF: "FMGLNZ87C12F205S",
         id_travel: 2,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 84,
@@ -843,7 +843,7 @@ const travelersArray = [
         email: "marta.colletti@email.it",
         CF: "CLLMRT94A41H501T",
         id_travel: 2,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 85,
@@ -853,7 +853,7 @@ const travelersArray = [
         email: "niccolo.barbieri@email.it",
         CF: "BRBNCL86C12F205E",
         id_travel: 3,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 86,
@@ -863,7 +863,7 @@ const travelersArray = [
         email: "olga.demarchi@email.it",
         CF: "DMRLGH92A41H501C",
         id_travel: 3,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 87,
@@ -873,7 +873,7 @@ const travelersArray = [
         email: "piero.rondini@email.it",
         CF: "RNDPRO84C12F205L",
         id_travel: 4,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 88,
@@ -883,7 +883,7 @@ const travelersArray = [
         email: "querina.bertoli@email.it",
         CF: "BRTQRN95A41H501M",
         id_travel: 4,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 89,
@@ -893,7 +893,7 @@ const travelersArray = [
         email: "riccardo.pellegrino@email.it",
         CF: "PLLRC86C12F205Q",
         id_travel: 5,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 90,
@@ -903,7 +903,7 @@ const travelersArray = [
         email: "silvia.corradi@email.it",
         CF: "CRDSLV93A41H501A",
         id_travel: 5,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
 
     {
@@ -914,7 +914,7 @@ const travelersArray = [
         email: "tommaso.negri@email.it",
         CF: "NGRTMS85C12F205F",
         id_travel: 6,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 92,
@@ -924,7 +924,7 @@ const travelersArray = [
         email: "ursula.bernasconi@email.it",
         CF: "BRNURS92A41H501D",
         id_travel: 6,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 93,
@@ -934,7 +934,7 @@ const travelersArray = [
         email: "vittorio.pavan@email.it",
         CF: "PVNVTR87C12F205R",
         id_travel: 7,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 94,
@@ -944,7 +944,7 @@ const travelersArray = [
         email: "wanda.locatelli@email.it",
         CF: "LCTWND94A41H501S",
         id_travel: 7,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 95,
@@ -954,7 +954,7 @@ const travelersArray = [
         email: "xavier.baldini@email.it",
         CF: "BLDXVR88C12F205H",
         id_travel: 8,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 96,
@@ -964,7 +964,7 @@ const travelersArray = [
         email: "yara.fornari@email.it",
         CF: "FRNYRA95A41H501E",
         id_travel: 8,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 97,
@@ -974,7 +974,7 @@ const travelersArray = [
         email: "zeno.gatti@email.it",
         CF: "GTTZNO86C12F205C",
         id_travel: 9,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 98,
@@ -984,7 +984,7 @@ const travelersArray = [
         email: "alice.ravelli@email.it",
         CF: "RVLLCE93A41H501P",
         id_travel: 9,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     },
     {
         id: 99,
@@ -994,7 +994,7 @@ const travelersArray = [
         email: "brando.morelli@email.it",
         CF: "MRLBRN85C12F205M",
         id_travel: 10,
-        img: "viaggiatore.jpg"
+        image: "viaggiatore.jpg"
     },
     {
         id: 100,
@@ -1004,7 +1004,7 @@ const travelersArray = [
         email: "claudia.santini@email.it",
         CF: "SNTCLD92A41H501K",
         id_travel: 10,
-        img: "viaggiatrice.jpg"
+        image: "viaggiatrice.jpg"
     }
 ];
 

@@ -10,7 +10,7 @@ export default function TravelersCard({ traveler }) {
             <div className="travel-card" id="altezza" key={traveler.id}>
                 <div
                     className="travel-card-bg" id="traveler"
-                    style={{ backgroundImage: `url(/image/${traveler.img})`, opacity: 0.70 }}
+                    style={{ backgroundImage: `url(/image/${traveler.image})`, opacity: 0.70 }}
                 ></div>
                 <div className="travel-card-overlay traveler-overlay">
                     <h5 className="travel-title traveler-title px-2">
