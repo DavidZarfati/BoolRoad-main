@@ -23,10 +23,10 @@ export default function TravelersCard({ traveler }) {
                     </button>
                     {isVisible && (<>
                         <p className="travel-subtitle traveler-subtitle px-3 my-3">
-                            <strong>Email:</strong> <a className="text-white" href="">{traveler.email}</a>
+                            <strong>Email:</strong> <a className="text-white" href={`mailto:${traveler.email}`}>{traveler.email}</a>
                         </p>
                         <p className="travel-subtitle traveler-subtitle px-3">
-                            <strong>Telefono:</strong> <a className="text-white" href="">{traveler.phone_number}</a>
+                            <strong>Telefono:</strong> <a className="text-white" href={`tel:${traveler.phone_number}`}>{traveler.phone_number}</a>
                         </p>
                         <p className="travel-subtitle traveler-subtitle px-3">
                             <strong>CF:</strong> {traveler.CF}
