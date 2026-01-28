@@ -111,6 +111,8 @@ export default function Travelers() {
         }
         setLoadForm(false)
     }
+    const [loadEmergency, setLoadEmergency] = useState(false);
+
 
 
     return (
@@ -126,18 +128,18 @@ export default function Travelers() {
                         </form>
                     </div>
                 </nav>
-                <div className="sm_mainheader"> <button className="header-link border-none my-5" onClick={() => setLoadForm(true)}>Aggiungi viaggiatore</button> </div>
+                <div className="sm_mainheader"> <button className="header-link border-none my-5 mx-3" onClick={() => setLoadForm(true)}>Aggiungi viaggiatore  <i className="bi bi-plus-lg text-secondary"></i></button>
+                    <button onClick={() => setLoadEmergency(true)} className="border-none header-link my-5 mx-3">Contatti Di Emergenza <i class="bi bi-exclamation-triangle-fill"></i></button> </div>                </div>
 
-                {filteredTravelers.length == 0 ? <div>nessun partecipante trovato</div> :
-                    <div className="row">
-                        {filteredTravelers.map((traveler) => (
-                            <div className="col-12 col-md-6 mb-3" key={traveler.id}>
-                                <TravelersCard traveler={traveler} />
-                            </div>
-                        ))}
-                    </div>
-                }
-            </div>
+            {filteredTravelers.length == 0 ? <div>nessun partecipante trovato</div> :
+                <div className="row">
+                    {filteredTravelers.map((traveler) => (
+                        <div className="col-12 col-md-6 mb-3" key={traveler.id}>
+                            <TravelersCard traveler={traveler} />
+                        </div>
+                    ))}
+                </div>
+            }
             {loadForm &&
                 <div className="sm_form">
                     <form className="mx-5" onSubmit={handleSubmit}>
@@ -211,11 +213,24 @@ export default function Travelers() {
                             Submit
                         </button>
                         <button onClick={resetForm} className="header-link border-none ms-3 border-pill close-btn">
-                            <i class="bi bi-x-lg"></i>
+                            <i className="bi bi-x-lg"></i>
                         </button>
                     </form>
                 </div>
             }
+            {loadEmergency &&
+                <div className="sm_emergency">
+                    <ul class="list-group date-pills">
+                        <li class="list-group-item">Numero unico di emergenza: <a href="tel:112">112</a></li>
+                        <li class="list-group-item">Emergenza sanitaria: <a href="tel:118">118</a></li>
+                        <li class="list-group-item">Anti-Violenza: <a href="tel:1522">1522</a></li>
+                        <li class="list-group-item">Vigili del fuoco: <a href="tel:115">115</a></li>
+                        <li class="list-group-item">Viaggiare informati: <a href="tel:1518">1518</a></li>
+                    </ul>
+                    <button onClick={() => setLoadEmergency(false)} className="header-link border-none"><i class="bi bi-x"></i></button>
+                </div>
+            }
+
         </>
     )
 }

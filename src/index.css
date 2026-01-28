@@ -24,6 +24,20 @@ body {
     background-color: rgba(128, 128, 128, 0.9);
 }
 
+.sm_emergency {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.9);
+    gap: 20px;
+}
+
 .travelers-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
