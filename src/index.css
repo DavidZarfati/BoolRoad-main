@@ -6,6 +6,24 @@ body {
     border: 0px;
 }
 
+.sm_mainheader {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sm_form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.9);
+}
+
 .travelers-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
