@@ -76,6 +76,7 @@ export default function Travelers() {
         if (event.target && event.target.image) {
             event.target.image.value = '';
         }
+        setLoadForm(false)
     };
 
     function filter(event) {
@@ -92,6 +93,25 @@ export default function Travelers() {
         setFilterVar("")
     }
 
+    const [loadForm, setLoadForm] = useState(false);
+
+    function resetForm() {
+        setFormData({
+            name: '',
+            surname: '',
+            phone_number: '',
+            email: '',
+            image: null,
+            cf: '',
+            slug: slug
+        });
+        // Reset file input manually
+        if (event.target && event.target.image) {
+            event.target.image.value = '';
+        }
+        setLoadForm(false)
+    }
+
 
     return (
         <>
@@ -106,6 +126,8 @@ export default function Travelers() {
                         </form>
                     </div>
                 </nav>
+                <div className="sm_mainheader"> <button className="header-link border-none my-5" onClick={() => setLoadForm(true)}>Aggiungi viaggiatore</button> </div>
+
                 {filteredTravelers.length == 0 ? <div>nessun partecipante trovato</div> :
                     <div className="row">
                         {filteredTravelers.map((traveler) => (
@@ -116,79 +138,84 @@ export default function Travelers() {
                     </div>
                 }
             </div>
-            <form className="mx-5" onSubmit={handleSubmit}>
-                <div className="mb-3">
-                    <label htmlFor="name" className="form-label">
-                        Nome
-                    </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="name"
-                        name="name"
-                        aria-describedby="emailHelp"
-                        onChange={handleChange}
-                        value={userInputData.name || ""}
-                    />
+            {loadForm &&
+                <div className="sm_form">
+                    <form className="mx-5" onSubmit={handleSubmit}>
+                        <div className="mb-3">
+                            <label htmlFor="name" className="form-label">
+                                Nome
+                            </label>
+                            <input
+                                type="text"
+                                className="date-pill shadow-sm py-2"
+                                id="name"
+                                name="name"
+                                aria-describedby="emailHelp"
+                                onChange={handleChange}
+                                value={userInputData.name || ""}
+                            />
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="surname" className="form-label">
+                                Cognome
+                            </label>
+                            <input
+                                type="text"
+                                className="date-pill shadow-sm py-2"
+                                id="surname"
+                                name="surname"
+                                onChange={handleChange}
+                                value={userInputData.surname || ""}
+                            />
+                            <label className="my-4">Numero di telefono
+                                <input type="tel" name="phone_number" onChange={handleChange} value={userInputData.phone_number || ""} className="date-pill shadow-sm" />
+                            </label>
+                            <br />
+                            <label className="my-4">Email
+                                <input type="email" name="email" onChange={handleChange} value={userInputData.email || ""} className="date-pill shadow-sm" />
+                            </label>
+                            <br />
+                            <label className="my-4">Codice Fiscale
+                                <input type="text" name="cf" onChange={handleChange} value={userInputData.cf || ""} className="date-pill shadow-sm" />
+                            </label>
+                        </div>
+
+                        <div className="mb-3">
+
+                            <label className="form-label">
+                                Carica immagine
+                            </label>
+
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                className="date-pill shadow-sm py-2"
+                                onChange={handleChange}
+                            />
+
+                        </div>
+
+                        {/* Anteprima */}
+                        {userInputData.image && (
+                            <img
+                                src={URL.createObjectURL(userInputData.image)}
+                                alt="preview"
+                                width="200"
+                                className="mb-3"
+                            />
+                        )}
+
+                        <button type="submit" className="header-link border-none">
+                            Submit
+                        </button>
+                        <button onClick={resetForm} className="header-link border-none ms-3 border-pill close-btn">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </form>
                 </div>
-
-                <div className="mb-3">
-                    <label htmlFor="surname" className="form-label">
-                        Cognome
-                    </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="surname"
-                        name="surname"
-                        onChange={handleChange}
-                        value={userInputData.surname || ""}
-                    />
-                    <label className="my-4">Numero di telefono
-                        <input type="tel" name="phone_number" onChange={handleChange} value={userInputData.phone_number || ""} className="mx-3 date-pill shadow-sm" />
-                    </label>
-                    <br />
-                    <label className="my-4">Email
-                        <input type="email" name="email" onChange={handleChange} value={userInputData.email || ""} className="mx-3 date-pill shadow-sm" />
-                    </label>
-                    <label className="my-4">Codice Fiscale
-                        <input type="text" name="cf" onChange={handleChange} value={userInputData.cf || ""} className="mx-3 date-pill shadow-sm" />
-                    </label>
-                </div>
-
-                <div className="mb-3">
-
-                    <label className="form-label">
-                        Carica immagine
-                    </label>
-
-                    <input
-                        type="file"
-                        name="image"
-                        accept="image/*"
-                        className="form-control"
-                        onChange={handleChange}
-                    />
-
-                </div>
-
-                {/* Anteprima */}
-                {userInputData.image && (
-                    <img
-                        src={URL.createObjectURL(userInputData.image)}
-                        alt="preview"
-                        width="200"
-                        className="mb-3"
-                    />
-                )}
-
-
-
-
-                <button type="submit" className="header-link border-none">
-                    Submit
-                </button>
-            </form>
+            }
         </>
     )
 }

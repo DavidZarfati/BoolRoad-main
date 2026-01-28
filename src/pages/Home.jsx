@@ -91,7 +91,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="sm_mainheader"> <button className="btn btn-primary" onClick={() => setLoadForm(true)}>Aggiungi viaggio </button> </div>
+            <div className="sm_mainheader"> <button className="header-link border-none" onClick={() => setLoadForm(true)}><i className="bi bi-plus-lg plus-icon"></i></button> </div>
             <main className="app-container p-5 mx-auto my-5">
                 {travels.map((travel) => (
                     <Link
@@ -125,7 +125,7 @@ export default function Home() {
                             </label>
                             <input
                                 type="text"
-                                className="form-control"
+                                className="date-pill shadow-sm py-2"
                                 id="name"
                                 name="name"
                                 aria-describedby="emailHelp"
@@ -143,7 +143,7 @@ export default function Home() {
                             </label>
                             <input
                                 type="text"
-                                className="form-control"
+                                className="date-pill shadow-sm py-2"
                                 id="description"
                                 name="description"
                                 onChange={handleChange}
@@ -168,7 +168,7 @@ export default function Home() {
                                 type="file"
                                 name="image"
                                 accept="image/*"
-                                className="form-control"
+                                className="date-pill shadow-sm py-2"
                                 onChange={handleChange}
                             />
 
@@ -190,8 +190,8 @@ export default function Home() {
                         <button type="submit" className="header-link border-none">
                             Submit
                         </button>
-                        <button onClick={resetForm} className="btn btn-warning ms-3">
-                            Close
+                        <button onClick={resetForm} className="header-link border-none ms-3 border-pill close-btn">
+                            <i class="bi bi-x-lg"></i>
                         </button>
                     </form>
                 </div>

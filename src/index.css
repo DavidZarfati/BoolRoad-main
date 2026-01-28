@@ -259,6 +259,14 @@ body {
     box-shadow: 0 0 0 3px rgba(95, 170, 211, 0.25);
 }
 
+.plus-icon {
+    font-size: 1.8rem;
+}
+
+.close-btn {
+    color: grey;
+}
+
 
 @media (min-width: 992px) {
     .app-container {
